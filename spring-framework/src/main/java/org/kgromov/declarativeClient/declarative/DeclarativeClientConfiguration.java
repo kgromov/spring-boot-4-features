@@ -4,6 +4,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.service.registry.ImportHttpServices;
 
 @Configuration
-@ImportHttpServices(types = {PostClient.class}, group = "jsonplaceholder", basePackageClasses = PostClient.class)
+@ImportHttpServices(types = {PostClient.class}, group = "jsonplaceholder")
 public class DeclarativeClientConfiguration {
 }

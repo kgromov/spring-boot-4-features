@@ -28,7 +28,7 @@ public class ImperativeClientConfiguration {
             @Override
             public void configureGroups(Groups<RestClient.Builder> groups) {
                 groups.filterByName("todos")
-                        .forEachClient((group, builder) -> builder.defaultApiVersion("1.0"));
+                        .forEachClient((group, builder) -> builder.defaultHeader("User-Agent", "Spring"));
             }
         };
     }
